@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+    <h3>Recommended User</h3>
+    <!-- <legend class="border-bottom mb-4">Best Jobs Available Are:</legend> -->
+    {{ table_html|safe }}
+    <br></br>
+    <h3>User with Above entered Id</h3>
+    {{ table_html_c|safe }}
+    <br></br>
+    <h3>Recommended Jobs based on Recommended User</h3>
+    {{ table_html_g|safe }}
+{% endblock content %}

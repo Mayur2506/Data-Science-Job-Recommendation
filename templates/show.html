@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+    <h3>Top 5 Recommended Jobs (Cosine Similarity)</h3>
+    <!-- <legend class="border-bottom mb-4">Best Jobs Available Are:</legend> -->
+    {{ table_html|safe }}
+    <br></br>
+    <h3>Top 5 Recommended Jobs (Pearson Similarity)</h3>
+    {{ table_html_c|safe }}
+    <br></br>
+    <h3>Top 5 Recommended Jobs (Manhattan Distance)</h3>
+    {{ table_html_d|safe }}
+    <br></br>
+    <h3>Top 5 Recommended Jobs (Jaccard Similarity)</h3>
+    {{ table_html_e|safe }}
+    <br></br>
+    <h3>Top 5 Recommended Jobs (Hamming Distance)</h3>
+    {{ table_html_f|safe }}
+    <br></br>
+    <h3>Top 5 Recommended Jobs (Minkowski Distance)</h3>
+    {{ table_html_g|safe }}
+    <br></br>
+    <div style="margin-left:17rem;">
+    <h3>Give Your Feedback on Recommendation!</h3>
+    <div class="rate" style="margin-left: 12rem;">
+        <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text">5 stars</label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text">4 stars</label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text">3 stars</label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text">2 stars</label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text">1 star</label>
+    </div>
+    </div>
+{% endblock content %}
